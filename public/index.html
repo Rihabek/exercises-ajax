@@ -29,7 +29,7 @@
             <form id="form" class="bg-light p-2 rounded" onsubmit="event.preventDefault()">
               <div class="form-group">
                 <label for="inputName">Nom</label>
-                <input name="name" value="Mon nom" type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Entrer un nom">
+                <input name="name"value="Mon nom" type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Entrer un nom">
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="sex" id="sex1" value="1" checked>
@@ -64,11 +64,11 @@
             <div class="bg-light p-2 rounded">
               <h3>Heure</h3>
               <div class="time">
-                <div class="units" data-hours></div>
+                <div id="h"class="units" data-hours></div>
                 <div class="separator">:</div>
-                <div class="units" data-minutes></div>
+                <div id="m" class="units" data-minutes></div>
                 <div class="separator">:</div>
-                <div class="units" data-secondes></div>
+                <div id="s" class="units" data-secondes></div>
               </div>
             </div>
           </div>
@@ -76,11 +76,11 @@
             <div class="bg-light p-2 rounded">
               <h3>Heure dans une seconde</h3>
               <div class="time">
-                <div class="units"></div>
+                <div id="h2" class="units"></div>
                 <div class="separator">:</div>
-                <div class="units"></div>
+                <div id="m2" class="units"></div>
                 <div class="separator">:</div>
-                <div class="units"></div>
+                <div id="s2" class="units"></div>
               </div>
             </div>
           </div>
