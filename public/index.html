@@ -11,25 +11,25 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 mt-5">
+          <div id="replaceText" class="col-md-12 mt-5">
             Remplacer ce text par le contenu du fichier "ajax/content.html".
           </div>
         </div>
         <div class="row">
-          <div class="col-md-8 mt-2">
+          <div id="blop" class="col-md-8 mt-2">
             Remplacer ce text par le contenu fichier "ajax/delay5.html" dans <span data-timer>5</span> secondes.
           </div>
-          <div class="col-md-4 mt-2">
+          <div id="button" class="col-md-4 mt-2">
             <p>Au clique du boutton, remplacer ce text et le boutton par le contenu fichier "ajax/info.html".</p>
-            <button type="button" class="btn btn-primary">Afficher les infos</button>
+            <button id="buttonClick" type="button" class="btn btn-primary">Afficher les infos</button>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 mt-4">
-            <form class="bg-light p-2 rounded" onsubmit="event.preventDefault()">
+            <form id="form" class="bg-light p-2 rounded" onsubmit="event.preventDefault()">
               <div class="form-group">
                 <label for="inputName">Nom</label>
-                <input value="Mon nom" type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Entrer un nom">
+                <input name="name" value="Mon nom" type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Entrer un nom">
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="sex" id="sex1" value="1" checked>
@@ -51,10 +51,10 @@
                   <option value="3">FullStack</option>
                 </select>
               </div>
-              <button type="submit" class="btn btn-primary">Envoyer</button>
+              <button id="buttonForm" type="submit" class="btn btn-primary">Envoyer</button>
             </form>
           </div>
-          <div class="col-md-6 mt-4">
+          <div id="formulaire" class="col-md-6 mt-4">
             Poster le formulaire sur "/user" et afficher la réponse ici.
           </div>
         </div>
