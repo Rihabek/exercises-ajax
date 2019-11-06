@@ -38,7 +38,7 @@ $(function() {
 
   });
 
-  var daveData
+  var data
   $("#form").submit(function () {
     var data = {
        name : $(this).find('[name="name"]').val(),
